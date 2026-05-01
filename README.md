@@ -107,9 +107,6 @@ Please check **Known Issues** above before opening a new ticket.
 
 ### 🙏 Credits
 LÖVE2D 11.4 aarch64 binary by Cebion/love2d_aarch64
-
-Inspired by ClockMu
-
 Built for the muOS community
 
 ### 📄 Licence
