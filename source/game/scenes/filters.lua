@@ -148,7 +148,11 @@ end
 
 local function drawColumn(theme, col, x, w, focused)
     -- Header
-    love.graphics.setColor(focused and theme.color("text_accent") or theme.color("text_dim"))
+    if focused then
+		love.graphics.setColor(theme.color("text_accent"))
+	else
+		love.graphics.setColor(theme.color("text_dim"))
+	end
     love.graphics.printf(col.title, x, 50, w, "center")
 
     -- Border
@@ -182,10 +186,22 @@ local function drawColumn(theme, col, x, w, focused)
         else
             local checked = isChecked(item)
             local box = checked and "[X]" or "[ ]"
-            love.graphics.setColor(checked and theme.color("accent") or theme.color("text_dim"))
+			if checked then
+				love.graphics.setColor(theme.color("accent"))
+			else
+				love.graphics.setColor(theme.color("text_dim"))
+			end
             love.graphics.print(box, x + 4, y + 4)
-            love.graphics.setColor(is_focused_row and theme.color("text") or
-                                  (checked and theme.color("text") or theme.color("text_dim")))
+			
+			if is_focused_row then
+				love.graphics.setColor(theme.color("text"))
+			else
+				if checked then
+					love.graphics.setColor(theme.color("text"))
+				else
+					love.graphics.setColor(theme.color("text_dim"))
+				end
+			end
             love.graphics.print(item.label, x + 36, y + 4)
         end
 
