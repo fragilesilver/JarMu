@@ -1,4 +1,5 @@
 ## JarMu
+[![Licence: GPL-3.0 with NC Exception](https://shields.io/badge/license-GPL--3.0_--_Non--Commercial-red?logo=github)](./LICENSE)
 
 A "shake the jar" random game picker for **[muOS](https://muos.dev/) Andromeda**
 on the **Anbernic RG35XX family** (all Allwinner H700 - Pro, Plus, H, SP, 2024).
@@ -118,7 +119,12 @@ compositing, so the three apps stay consistent on every RG35XX variant.
 
 ### 📄 Licence
 
-GPL-3.0-or-later. See [LICENSE](LICENSE).
+This project is licensed under the **GNU General Public License v3.0 (or later)** with a strict **Non-Commercial Exception**. 
+
+* **For Users & Devs:** You are completely free to use, share, study, and modify this app for personal, non-commercial use.
+* **For Commercial Sellers:** You are **STRICTLY PROHIBITED** from selling this app, charging a fee for it, or pre-loading it onto commercial handheld consoles, SD cards, or devices sold for profit. 
+
+See the [LICENSE](./LICENSE) file for the full legal terms.
 
 ---
 
